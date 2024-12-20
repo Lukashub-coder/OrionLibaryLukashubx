@@ -1,0 +1,176 @@
+-- Orion libary lukas hub!
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Lukas hub X Orion", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Admin script!",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Admin Scripts!"
+})
+
+OrionLib:MakeNotification({
+	Name = "Hey!",
+	Content = "Thanks for using lukas hub version orion libary!",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+
+Tab:AddButton({
+	Name = "Infinity Yield",
+	Callback = function()
+	  loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Nameless Admin v1",
+	Callback = function()
+	  loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Nameless-Admin-FE-11243"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Nameless Admin v2",
+	Callback = function()
+	  loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Nameless-Admin-V2-23440"))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Universal",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Universal!"
+})
+
+Tab:AddButton({
+	Name = "Super Speed!",
+	Callback = function()
+	  game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Infinity Jump!",
+	Callback = function()
+	  local InfiniteJumpEnabled = true game:GetService("UserInputService").JumpRequest:connect(function() 	if InfiniteJumpEnabled then 		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping") 	end end)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Super Jump!",
+	Callback = function()
+	  game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Fly! (Gui)",
+	Callback = function()
+	  loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Vfly (Gui)",
+	Callback = function()
+	  loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Vfly-script-by-me-11871"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Telekinesis (v5)",
+	Callback = function()
+	  loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fe-Telekinesis-V5-21542"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Big hitbox",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/big/refs/heads/main/big",true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "FPS",
+	Callback = function()
+	  loadstring(game:HttpGet("https://pastebin.com/raw/ySHJdZpb",true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Ping",
+	Callback = function()
+	  loadstring(game:HttpGet("https://pastebin.com/raw/MvKKJ331",true))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Lukas Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Op script"
+})
+
+Tab:AddButton({
+	Name = "Super ring V5 by lukas (me)",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Lukashub-coder/Man/refs/heads/main/!!"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Super ring V4 by lukas (me)",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Lukashub-coder/super-ring/refs/heads/main/Super%20ring!!"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Fe ritual Parts script (me)",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Lukashub-coder/Wwwwwwtetetetetetetetetetetetetetettteetettteet-ye-teteetetet/refs/heads/main/Yougayyyyyyyyyyyyyyyyyyyyyyyyyyyyyayayaysuiwheishsibewigsosgwkwbisbwisbsugeoshsigdiwbsibdiwvsobdiwnsgievwibs!!"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Chaos parts script (me)",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Lukashub-coder/Chaos-parts-script/refs/heads/main/Chaos%20part%20script"))()
+		end    
+})
+
+Tab:AddButton({
+	Name = "Lukas magnet script (me)",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Lukashub-coder/Lukas-magnet/refs/heads/main/Lukas%20magnet"))()
+		end    
+})
+
+Tab:AddButton({
+	Name = "Lukas magnet script (me)",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Lukashub-coder/Lukas-magnet/refs/heads/main/Lukas%20magnet"))()
+		end    
+})
+
+Tab:AddButton({
+	Name = "Fly gui (Fanmade)",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Lukashub-coder/Fly-gui-FANMADE/refs/heads/main/Fly%20gui%20FANMADE"))()
+		end    
+})
+
+OrionLib:Init()
